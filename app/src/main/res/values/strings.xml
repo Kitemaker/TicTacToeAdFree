@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Tic Tac Toe Ad-Free</string>
+    <string name="text_cross">X</string>
+    <string name="text_zero">0</string>
+    <string name="text_empty"></string>
+    <string name="text_start">Start</string>
+    <string name="text_reset">Reset</string>
+    <string name="text_topBanner">TopBanner</string>
+    <string name="text_XWin_Msg">Player \'X\' Wins</string>
+    <string name="text_0Win_Msg">Player \'0\' Wins</string>
+    <string name="text_GameOver">Game Over! Start Again</string>
+    <string name="text_PlrX">Player \'X\' :</string>
+    <string name="text_PlrO">Player \'0\' :</string>
+    <string name="text_score">Score</string>
+    <string name="text_StartWith">Start with:</string>
+    <string name="title_activity_launcher">Launcher</string>
+    <string name="text_SelectGame">Please Select Game Mode</string>
+    <string name="text_btnSingleDevice">Single Device</string>
+    <string name="text_DoubleDevice">Two Device</string>
+    <string name="title_activity_connected_device">ConnectedDevice</string>
+    <string name="title_activity_devices">DevicesActivity</string>
+    <string name="title_activity_chat">Chat</string>
+    <string name="connect">Connect</string>
+    <string name="discover">Discover</string>
+    <string name="register">Register</string>
+    <string name="send">Send</string>
+    <string name="apos_x_apos">\'X\'</string>
+    <string name="_00">00</string>
+    <string name="apos_o_apos">\'O\'</string>
+</resources>
