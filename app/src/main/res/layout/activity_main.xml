@@ -22,7 +22,7 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:onClick="ResetScore"
@@ -37,12 +37,12 @@
             android:layout_height="36dp"
 
 
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:text="@string/text_score"
-
             android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_blue_dark"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/buttonReset"
             app:layout_constraintTop_toTopOf="parent" />
@@ -53,13 +53,13 @@
             android:layout_height="36dp"
 
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:text="@string/text_PlrX"
+            android:textAllCaps="false"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textView_Score"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/textView_Score"
+            app:layout_constraintStart_toEndOf="@+id/textView_Score" />
 
         <TextView
             android:id="@+id/textViewScoreX"
@@ -67,28 +67,27 @@
             android:layout_height="36dp"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
             android:paddingRight="4dp"
             android:text="@string/_00"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            app:layout_constraintStart_toEndOf="@+id/textViewPlrX"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewPlrX"
+            app:layout_constraintStart_toEndOf="@+id/textViewPlrX" />
 
         <TextView
             android:id="@+id/textViewPlrO"
             android:layout_width="wrap_content"
             android:layout_height="36dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
             android:gravity="center_vertical"
             android:text="@string/text_PlrO"
             android:textAppearance="?android:attr/textAppearanceSmall"
             android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/textViewScoreX"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewScoreX"
+            app:layout_constraintStart_toEndOf="@+id/textViewScoreX" />
 
         <TextView
             android:id="@+id/textViewScoreO"
@@ -96,7 +95,6 @@
             android:layout_height="36dp"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:layout_toEndOf="@+id/textViewPlrO"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
@@ -104,8 +102,9 @@
             android:text="@string/_00"
             android:textAlignment="center"
             android:textAppearance="?android:attr/textAppearanceSmall"
-            app:layout_constraintStart_toEndOf="@+id/textViewPlrO"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:textColor="@android:color/black"
+            app:layout_constraintBaseline_toBaselineOf="@+id/textViewPlrO"
+            app:layout_constraintStart_toEndOf="@+id/textViewPlrO" />
 
 
         <TextView
@@ -113,12 +112,12 @@
             android:layout_width="wrap_content"
             android:layout_height="36dp"
 
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="4dp"
             android:gravity="center_vertical"
             android:text="@string/text_StartWith"
-            android:textAlignment="gravity"
             android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_blue_dark"
             android:textStyle="bold"
             app:layout_constraintStart_toEndOf="@+id/buttonStart"
             app:layout_constraintTop_toTopOf="@+id/buttonStart" />
@@ -181,7 +180,7 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="4dp"
             android:layout_marginTop="8dp"
             android:backgroundTint="@android:color/holo_blue_dark"
             android:onClick="ClearAll"
@@ -212,53 +211,59 @@
                 android:id="@+id/textView_0"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.33"
                 android:background="#ffeffffc"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginStart="4dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="2dp"
-                android:layout_weight="0.33" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.33"
                 android:background="#ffb8ffe9"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="2dp"
-                android:layout_weight="0.33" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.333"
                 android:background="#ffeffffc"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:outlineProvider="bounds"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginStart="2dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginBottom="2dp"
-                android:layout_weight="0.333" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -273,52 +278,58 @@
                 android:id="@+id/textView_3"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="0.33"
+                android:background="#ffb8ffe9"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="2dp"
-                android:background="#ffb8ffe9" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_4"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="0.33"
                 android:background="#ffeffffc"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginLeft="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginBottom="2dp" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_5"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="0.33"
                 android:background="#ffb8ffe9"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="2dp" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>
@@ -333,52 +344,58 @@
                 android:id="@+id/textView_6"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="0.33"
                 android:background="#ffeffffc"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="2dp"
-                android:layout_marginBottom="4dp" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_7"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="0.33"
                 android:background="#ffb8ffe9"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginLeft="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginRight="2dp"
-                android:layout_marginBottom="4dp" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView_8"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="2dp"
                 android:layout_weight="0.33"
                 android:background="#ffeffffc"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center_vertical|center_horizontal"
                 android:onClick="OnTileClicked"
                 android:text="@string/text_empty"
                 android:textAppearance="?android:attr/textAppearanceLarge"
-                android:textStyle="bold"
-                android:layout_marginStart="2dp"
-                android:layout_marginTop="2dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginBottom="4dp" android:focusable="true" />
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
 
         </LinearLayout>

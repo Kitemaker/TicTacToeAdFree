@@ -12,7 +12,7 @@
     <string name="text_PlrX">Player \'X\' :</string>
     <string name="text_PlrO">Player \'0\' :</string>
     <string name="text_score">Score</string>
-    <string name="text_StartWith">Start with:</string>
+    <string name="text_StartWith">Start With:</string>
     <string name="title_activity_launcher">Launcher</string>
     <string name="text_SelectGame">Please Select Game Mode</string>
     <string name="text_btnSingleDevice">Single Device</string>
@@ -26,5 +26,5 @@
     <string name="send">Send</string>
     <string name="apos_x_apos">\'X\'</string>
     <string name="_00">00</string>
-    <string name="apos_o_apos">\'O\'</string>
+    <string name="apos_o_apos">\'0\'</string>
 </resources>
