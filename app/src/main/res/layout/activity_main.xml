@@ -96,7 +96,7 @@
             android:layout_height="36dp"
             android:layout_gravity="center"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:layout_toEndOf="@+id/textViewPlrO"
             android:gravity="center_vertical"
             android:paddingLeft="4dp"
